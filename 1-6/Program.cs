@@ -11,8 +11,8 @@ namespace _1_6
     {
         static void Main(string[] args)
         {
-            // 调用方法打印索引到 5 的杨辉三角。
-            PrintPascalTriangle(5);
+            // 调用方法打印索引到 10 的杨辉三角。
+            PrintPascalTriangle(10);
 
             // 按任意键退出。
             Console.ReadKey();
