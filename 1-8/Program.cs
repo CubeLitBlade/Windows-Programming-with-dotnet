@@ -1,9 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _1_8
 {
@@ -13,7 +9,7 @@ namespace _1_8
         {
             // 初始化目标字符串。
             string str = "患者：“大夫，我咳嗽得很重。”     大夫：“你多大年记？”     患者：“七十五岁。”     大夫：“二十岁咳嗽吗”患者：“不咳嗽。”     大夫：“四十岁时咳嗽吗？”     患者：“也不咳嗽。”     大夫：“那现在不咳嗽，还要等到什么时咳嗽？”";
-            
+
             // 查找字符串的下标并输出其关键词数量。
             var index = GetKeywordIndex(str, "咳嗽");
             Console.WriteLine($"{index.Count} keyword(s) found in this string. ");

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _1_10
 {
@@ -42,7 +38,7 @@ namespace _1_10
                 result += word[i];
 
                 // 在单词之间（排除掉因空格删除产生的空字符串）补充一个空格。
-                if(i < word.Length - 1 && word[i] != "")
+                if (i < word.Length - 1 && word[i] != "")
                 {
                     result += " ";
                 }

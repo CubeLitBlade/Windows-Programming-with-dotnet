@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _1_4
 {
@@ -17,7 +12,7 @@ namespace _1_4
 
             // 生成随机数序列。
             Console.WriteLine("Random numbers: ");
-            for(int i = 0; i < num.Length; i++)
+            for (int i = 0; i < num.Length; i++)
             {
                 num[i] = rd.Next(100);
                 Console.Write($"{num[i]} ");
@@ -42,7 +37,7 @@ namespace _1_4
             double result = x[0];
             foreach (double i in x)
             {
-                if(i > result)
+                if (i > result)
                     result = i;
             }
             return result;

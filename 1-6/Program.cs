@@ -1,9 +1,4 @@
 ﻿using System;
-using System.CodeDom;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _1_6
 {
@@ -33,7 +28,7 @@ namespace _1_6
                 for (uint j = 0; j <= i; j++)
                 {
                     // 杨辉三角的各个元素是相应位置的组合数。
-                    Console.Write($"{ GetCombinatorialNumber(j, i)} ");
+                    Console.Write($"{GetCombinatorialNumber(j, i)} ");
                 }
                 Console.WriteLine();
             }
@@ -45,7 +40,7 @@ namespace _1_6
         /// <returns>若 n <= m，返回C(n, m)的值；否则返回 0.</returns>
         private static uint GetCombinatorialNumber(uint n, uint m)
         {
-            if(n <=m)
+            if (n <= m)
             {
                 // 在满足组合数条件时，采用简化公式连乘连除计算组合数。
                 // 不使用阶乘，减少计算量。

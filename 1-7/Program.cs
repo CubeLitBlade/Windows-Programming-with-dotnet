@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _1_7
 {
@@ -39,9 +34,9 @@ namespace _1_7
         private static void BubbleSortBy(params int[] num)
         {
             int temp = 0;
-            for(int i = 0; i < num.Length - 1; i++)
+            for (int i = 0; i < num.Length - 1; i++)
             {
-                for(int j = i; j < num.Length; j++)
+                for (int j = i; j < num.Length; j++)
                 {
                     if (num[i] > num[j])
                     {
