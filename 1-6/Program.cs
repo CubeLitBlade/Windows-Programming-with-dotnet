@@ -28,7 +28,7 @@ namespace _1_6
                 for (uint j = 0; j <= i; j++)
                 {
                     // 杨辉三角的各个元素是相应位置的组合数。
-                    Console.Write($"{GetCombinatorialNumber(j, i)} ");
+                    Console.Write($"{GetCombinatorialNumber(j, i)}\t");
                 }
                 Console.WriteLine();
             }
@@ -48,9 +48,6 @@ namespace _1_6
                 for (uint i = 1; i <= n; i++, m--)
                 {
                     result *= m;
-                }
-                for (uint i = 1; i <= n; i++)
-                {
                     result /= i;
                 }
                 return result;
