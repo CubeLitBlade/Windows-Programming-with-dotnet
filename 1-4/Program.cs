@@ -6,21 +6,24 @@ namespace _1_4
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Enter the number of random numbers: ");
+            uint n = Convert.ToUInt32(Console.ReadLine());
+
             // 初始化随机数发生器，用于生成数组
             Random rd = new Random();
-            double[] num = new double[10];
+            double[] num = new double[n];
 
             // 生成随机数序列。
-            Console.WriteLine("Random numbers: ");
+            Console.WriteLine($"Generated {n} random numbers: ");
             for (int i = 0; i < num.Length; i++)
             {
                 num[i] = rd.Next(100);
                 Console.Write($"{num[i]} ");
             }
+            Console.WriteLine();
 
             // 调用方法输出最大值。
-            Console.WriteLine("\nMax: ");
-            Console.WriteLine(Max(num));
+            Console.WriteLine($"The max value in the above list is {Max(num)}. ");
 
             // 按任意键退出。
             Console.ReadKey();

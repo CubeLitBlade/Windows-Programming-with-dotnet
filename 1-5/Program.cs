@@ -7,7 +7,7 @@ namespace _1_5
         static void Main(string[] args)
         {
             // 调用方法输出斐波那契数列前 20 项和。
-            Console.WriteLine($"The first 20 terms of the Fibonacci add up to {FibonacciSumOf(20)}. ");
+            Console.WriteLine($"The first 20 terms of the Fibonacci add up to {FibonacciSum(20)}. ");
 
             // 按任意键退出。
             Console.ReadKey();
@@ -48,7 +48,7 @@ namespace _1_5
         /// 返回斐波那契数列前 n 项之和。
         /// </summary>
         /// <returns>斐波那契数列前 n 项之和。</returns>
-        private static uint FibonacciSumOf(uint n)
+        private static uint FibonacciSum(uint n)
         {
             uint result = 0;
 

@@ -8,16 +8,18 @@ namespace _1_7
         {
             // 初始化无序序列，并将其打印到终端。
             int[] array = { 20, 16, 78, 61, 12, 99, 57, 34, 8 };
-            Console.WriteLine("Original array: ");
+            Console.WriteLine("The original array is as follows: ");
             foreach (int i in array)
             {
                 Console.Write($"{i} ");
             }
+
+            Console.WriteLine(); 
             Console.WriteLine();
 
             // 使用方法对序列冒泡排序，并将其打印到终端。
             BubbleSortBy(array);
-            Console.WriteLine("Sorted array: ");
+            Console.WriteLine("The original array is as follows: ");
             foreach (int i in array)
             {
                 Console.Write($"{i} ");

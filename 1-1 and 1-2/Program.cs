@@ -8,13 +8,13 @@ namespace _1_1_and_1_2
         {
             // 对测试数据初始化，并且打印出数据。
             int n1 = 10, n2 = 20;
-            Console.WriteLine("Original");
-            Console.WriteLine($"{n1} {n2}");
+            Console.WriteLine("Before swapping: ");
+            Console.WriteLine($"n1 = {n1}, n2 = {n2}");
 
             // 进行交换操作后打印出结果。
             SwapInt(ref n1, ref n2);
-            Console.WriteLine("Swapped");
-            Console.WriteLine($"{n1} {n2}");
+            Console.WriteLine("After swapping: ");
+            Console.WriteLine($"n1 = {n1}, n2 = {n2}");
 
             // 按任意键退出。
             Console.ReadKey();

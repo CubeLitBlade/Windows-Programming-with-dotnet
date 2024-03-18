@@ -47,8 +47,6 @@ namespace _1_8
                 i = target.IndexOf(keyword, i + 1);
             }
             return index;
-
         }
-
     }
 }
